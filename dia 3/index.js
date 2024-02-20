@@ -5,7 +5,7 @@ let altura = 0
 let peso = 0
 
 // Apresentando ao Usuário a coleta de informação 
-nome = prompt("Digite seu nome: ")
+nome = prompt("Digite seu nome completo: ")
 idade = parseInt(prompt("Digite sua idade: "))
 altura = parseFloat(prompt("Digite sua altura: "))
 peso = parseInt(prompt("Digite seu peso: "))
