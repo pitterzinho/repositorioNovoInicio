@@ -6,12 +6,12 @@ qtdAlunosMasculinos = 0
 contador = 1
 
 // ENTRADA DOS CÓDIGOS
-while(contador <= 10){ //nota,sexo nesse looping
+while(contador <= 10){  //nota,sexo nesse looping (atribui o 10 como o total de nº de alunos)
     sexo = prompt("Insira o seu sexo do aluno: Masculino (m) ou Feminino (f)")
     nota = Number(prompt("Digite de 0 a 10, a nota do " + contador + "º aluno"))
 
-    if(sexo = "m"){
-
+    if(sexo = "m"){   // Loop para inserir as notas e sexos dos alunos
+ 
         if(nota > maiorNotaMasculina){
          nota = maiorNotaMasculina   
         }
@@ -21,12 +21,12 @@ while(contador <= 10){ //nota,sexo nesse looping
     notaFemininaAcima7++
     }
 
-    mediaGeral += nota //operador de atribuição composta que realiza duas operações ao mesmo tempo: adição e atribuição
+    mediaGeral = mediaGeral + nota // Soma a nota à média geral
     contador++
 
 }
 
-mediaGeral = mediaGeral / 20
+mediaGeral = mediaGeral / 10
 
 // SAÍDA DOS CÓDIGOS
 console.log("A média geral dos alunos foi : " + mediaGeral )
