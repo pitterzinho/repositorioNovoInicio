@@ -1,11 +1,11 @@
-// CRIANDO VARÁVEIS
+// VARÁVEIS
 maiorNotaMasculina = 0
 notaFemininaAcima7 = 0
 mediaGeral = 0
 qtdAlunosMasculinos = 0
 contador = 1
 
-// ENTRADA DOS CÓDIGOS
+// ENTRADA 
 while(contador <= 10){  //nota,sexo nesse looping (atribui o 10 como o total de nº de alunos)
     sexo = prompt("Insira o seu sexo do aluno: Masculino (m) ou Feminino (f)")
     nota = Number(prompt("Digite de 0 a 10, a nota do " + contador + "º aluno"))
@@ -21,14 +21,14 @@ while(contador <= 10){  //nota,sexo nesse looping (atribui o 10 como o total de 
     notaFemininaAcima7++
     }
 
-    mediaGeral = mediaGeral + nota // Soma a nota à média geral
+    mediaGeral += nota // Adicionar o valor de uma variável a outra
     contador++
 
 }
 
 mediaGeral = mediaGeral / 10
 
-// SAÍDA DOS CÓDIGOS
+// SAÍDA 
 console.log("A média geral dos alunos foi : " + mediaGeral )
 console.log("Os alunos do sexo Masculino (m) que enviaram as notas foi(ram): " + qtdAlunosMasculinos)
 console.log("As alunas do sexo Feminino (f) que enviaram as notas foi(ram): " + notaFemininaAcima7)
